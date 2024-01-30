@@ -19,7 +19,7 @@ JOBS = [
         "id": 3,
         "title": "Fontend Developer",
         "location": "Dhaka, Bangladesh",
-        "salary": "100000"
+        #"salary": "100000"
     },
     {
         "id": 4,
