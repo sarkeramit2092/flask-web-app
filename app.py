@@ -32,7 +32,7 @@ JOBS = [
 
 @app.route("/")
 def hello_world():
-  return render_template("home.html", jobs=JOBS)
+  return render_template("home.html", jobs=JOBS, company_name="Amit")
 
 
 if __name__ == "__main__":
