@@ -8,29 +8,35 @@
 
   <style>
     #banner {
-      height: 400px;
+      height: 450px;
       width: 100%;
+      object-fit:cover;
+      margin-bottom: 16px;
     }
   </style>
   
 </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://2e33b9ca-9646-4cde-b206-4324b5ebd328-00-2m2bmzv665oiy.pike.replit.dev/static/career.png" height="180" width= "200" alt="Header Image">
+    
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Welcome to {{company_name}} Careers</h1>
-    
-      <img class="img-fluid" id="banner" src="https://2e33b9ca-9646-4cde-b206-4324b5ebd328-00-2m2bmzv665oiy.pike.replit.dev/static/career.png" height="180" width= "200" alt="Header Image">
-    
-      <h2 class="text-center mt-2 mb-4">About Amit</h2>
-    
+
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
       <p class="lead"><strong>One</strong> of the cool things about this font generator is that you can choose from more than 20 different styles. That means you can find a unique flair that perfectly fits what you’re trying to say.<br>
   
         <strong>To</strong> use the font generator on a desktop, simply type (or copy/paste) your text into the “Type/paste your text” field, and then select one of the font subsets. Once you click on a subset, you’ll see a drop-down list with previews of each style. Find the one you like, click the “Copy” button on the right, and then right-click or key-shortcut your text anywhere online or offline that allows you to type text.<br>
   
         <strong>For</strong> mobile users on iPhone or Android, it’s even easier. Like desktop, simply type or copy/paste your desired text into the input field, and then choose your subset. Once you decide on the font, click the “Copy” button and the text will automatically save to your clipboard. Then head over to whatever platform you want, paste it in, and blow people’s minds with your fancy text.</p>
-  
-    <h2 class="text-center mt-2 mb-4">About Amit Careers</h2>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore/p>
 
+        </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="/static/people.jpg" style= "width:550px; height:420px; border-radius:6px">
+        </div>
+      </div>
+        
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       
       <div>
@@ -40,11 +46,9 @@
       </div>
       
       <div class="text-center">
-    <button class="btn btn-outline-primary">Contact Us</button>
-    <p class="mt-4">
-      Copyright 24, Amit Careers
-    </p>
+       <button class="btn btn-outline-primary">Contact Us</button>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
